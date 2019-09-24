@@ -1,0 +1,24 @@
+{
+  "name": "mern_shopping_list",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev-server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "client-install": "npm install --prefix client",
+    "dev": "concurrently \"npm run dev-server\" \"npm run client \" "
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "concurrently": "^4.1.2",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.1"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.2"
+  }
+}
